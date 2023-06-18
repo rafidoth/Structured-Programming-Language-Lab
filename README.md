@@ -9,8 +9,8 @@ Table of Contents
 
 ---
 
-## Loop
-### [Problemset Link]() 
+# Loop
+### [Problemset Link](https://github.com/rafidoth/Structured-Programming-Language-Lab/blob/main/Loop/04%20Loop.docx.pdf) 
 File name : 1.c
 ```c
 

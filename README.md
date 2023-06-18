@@ -2,6 +2,8 @@
  
 Solution of problemset provided in SPL Lab (CSE 1112)
 
+>**Disclaimer:** All the solutions provided in this repo are given by me. They are not guaranteed to be 100% correct or highly efficient. Please use them as a starting point and do your own testing and debugging. You can also take help from other sources to make your code more efficient.
+
 Table of Contents
 - [Loop Related Problems](#loop)
 

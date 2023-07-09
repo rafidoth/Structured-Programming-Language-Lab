@@ -1022,10 +1022,12 @@ int main(){
 ### [Problemset Link](https://github.com/rafidoth/Structured-Programming-Language-Lab/blob/main/Pattern/06%20Nested%20loop.docx.pdf) 
 
 File name : 1.c
+```
 1234
 1234
 1234
 1234
+```
 
 ```c
 #include<stdio.h>
@@ -1048,10 +1050,12 @@ int main(){
 
 ```
 File name : 2.c
+```
 1234
 2345
 3456
 4567
+```
 
 ```c
 #include<stdio.h>
@@ -1074,10 +1078,12 @@ int main(){
 
 ```
 File name : 3.c
+```
 1
 23
 345
 4567
+```
 
 ```c
 #include<stdio.h>
@@ -1100,11 +1106,13 @@ int main(){
 
 ```
 File name : 4.c
+```
 ____1 
 ___22 
 __333 
 _4444 
 55555
+```
 
 ```c
 #include<stdio.h>
@@ -1128,10 +1136,12 @@ int main(){
 
 ```
 File name : 5.c
+```
 4
 43
 432
 4321
+```
 
 ```c
 #include<stdio.h>
@@ -1157,10 +1167,12 @@ int main(){
 
 ```
 File name : 6.c
+```
 1
 12
 123
 1234
+```
 
 ```c
 #include<stdio.h>
@@ -1183,10 +1195,12 @@ int main(){
 
 ```
 File name : 7.c
+```
 ****
 ****
 ****
 ****
+```
 
 ```c
 #include<stdio.h>
@@ -1210,11 +1224,13 @@ int main(){
 
 ```
 File name : 8.c
+```
 *****
 ****
 ***
 **
 *
+```
 
 ```c
 #include<stdio.h>
@@ -1240,11 +1256,13 @@ int main(){
 
 ```
 File name : 9.c
+```
 10101
 01010
 10101
 01010
 10101
+```
 
 ```c
 #include<stdio.h>
@@ -1282,11 +1300,13 @@ int main()
 
 ```
 File name : 10.c
+```
 ____*
 ___**
 __***
 _****
 *****
+```
 
 ```c
 #include<stdio.h>
@@ -1314,11 +1334,13 @@ int main(){
 
 ```
 File name : 11.c
+```
 ____*
 ___***
 __*****
 _*******
 *********
+```
 
 ```c
 #include<stdio.h>
@@ -1348,6 +1370,7 @@ int main(){
 
 ```
 File name : 12.c
+```
 ____*
 ___***
 __*****
@@ -1357,6 +1380,7 @@ _*******
 __*****
 ___***
 ____*
+```
 
 ```c
 #include<stdio.h>
@@ -1396,10 +1420,12 @@ int main(){
 
 ```
 File name : 13.c
+```
 1_____1
 12___21
 123_321
 1234321
+```
 
 ```c
 
@@ -1431,11 +1457,13 @@ int main(){
 
 ```
 File name : 14.c
+```
 *****
 *___*
 *****
 *___*
 *****
+```
 
 ```c
 #include<stdio.h>
@@ -1462,6 +1490,7 @@ int main(){
 
 ```
 File name : 15.c
+```
 ZZZZZZZ
      Z 
     Z  
@@ -1469,6 +1498,7 @@ ZZZZZZZ
   Z    
  Z     
 ZZZZZZZ
+```
 
 ```c
 #include<stdio.h>
@@ -1497,6 +1527,7 @@ int main(){
 
 ```
 File name : 16.c
+```
 *_____*
 _*___*_
 __*_*__
@@ -1504,6 +1535,8 @@ ___*___
 __*_*__
 _*___*_
 *_____*
+```
+
 
 ```c
 
@@ -1531,6 +1564,7 @@ int main(){
 
 ```
 File name : 17.c
+```
 ______$______
 _____$$$_____
 ____$_$_$____
@@ -1544,6 +1578,8 @@ ___$__$__$___
 ____$_$_$____
 _____$$$_____
 ______$______
+```
+
 
 ```c
 #include<stdio.h>
@@ -1586,14 +1622,15 @@ int main(){
 
 ```
 File name : 18.c
-H                    H
-H                    H
-H                    H
+```
+H           H
+H           H
+H           H
 H H H H H H H
-H                    H
-H                    H
-H                    H
-
+H           H
+H           H
+H           H
+```
 ```c
 
 

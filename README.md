@@ -452,6 +452,8 @@ int main() {
 ### [Problemset Link](https://github.com/rafidoth/Structured-Programming-Language-Lab/blob/main/Array/05%20Array.docx.pdf) 
 
 File name : 1.c
+
+WAP that will take n integer numbers into an array, and then print all the integers into reverse order (from the last valid index to index 0).
 ```c
 #include<stdio.h>
 
@@ -472,6 +474,8 @@ int main(){
 
 ```
 File name : 2.c
+
+WAP that will take n integer numbers into an array, and then sum up all the integers in that array.
 ```c
 
 #include<stdio.h>
@@ -491,6 +495,8 @@ int main(){
 
 ```
 File name : 3.c
+
+WAP that will take n integer numbers into an array, and then sum up all the even integers in that array.
 ```c
 
 #include<stdio.h>
@@ -512,6 +518,8 @@ int main(){
 
 ```
 File name : 4.c
+
+WAP  that will take n floating point numbers into an array, and then find the average of those numbers.
 ```c
 
 
@@ -534,6 +542,8 @@ int main(){
 
 ```
 File name : 5.c
+
+WAP that will take n integer numbers into an array, and then sum up all the even indexed integers in that array.
 ```c
 #include<stdio.h>
 
@@ -554,6 +564,8 @@ int main(){
 
 ```
 File name : 6.c
+
+Wap that will take n integer numbers in an array, n different integer numbers in a second array and put the sum of the same indexed numbers from the two arrays in a third array.
 ```c
 
 
@@ -581,6 +593,8 @@ int main(){
 
 ```
 File name : 7.c
+
+WAP that will take n integer numbers into an array, and then reverse all the integers within that array. Finally print them all from 0 index to last valid index.
 ```c
 #include<stdio.h>
 
@@ -607,6 +621,8 @@ int main(){
 
 ```
 File name : 8.c
+
+WAP that will take n integer numbers into an array, and then find the maximum -minimum among them with its index position.
 ```c
 
 #include<stdio.h>
@@ -640,6 +656,8 @@ int main(){
 
 ```
 File name : 9.c
+
+WAP that will take n alphabets into an array, and then count number of vowels in that array.
 ```c
 
 #include<stdio.h>
@@ -667,6 +685,9 @@ int main(){
 
 ```
 File name : 10.c
+
+WAP that will take n integers into an array, and then search a number into that array. If found then print its index. If not found then print “NOT FOUND”.
+
 ```c
 #include <stdio.h>
 
@@ -698,6 +719,8 @@ int main() {
 
 ```
 File name : 11.c
+
+WAP that will take n integers into an array A, and then copy all numbers in reverse order from array A to another array B. Finally show all elements of both array A and B.
 ```c
 #include <stdio.h>
 
@@ -729,6 +752,8 @@ int main() {
 
 ```
 File name : 12.c
+
+WAP that will take n integer numbers as input in an array and then insert a number in a position specified by the user in the array.
 ```c
 #include<stdio.h>
 int main(){
@@ -764,6 +789,8 @@ int main(){
 
 ```
 File name : 13.c
+
+WAP that will take n integer numbers as input in an array and then delete a number from a position specified by the user in the array.
 ```c
 #include<stdio.h>
 int main(){
@@ -795,6 +822,8 @@ int main(){
 
 ```
 File name : 14.c
+
+WAP that will first take n integers into an array A and then m integers into array B. Now swap all elements between array A and B. Finally show all elements of both array A and B.
 ```c
 #include<stdio.h>
 int main(){
@@ -828,6 +857,8 @@ int main(){
 
 ```
 File name : 15.c
+
+WAP that will take n positive integers into an array A. Now find all the integers that are divisible by 3 and replace them by -1 in array A. Finally show all elements of array A.
 ```c
 
 #include<stdio.h>
@@ -849,6 +880,8 @@ int main(){
 
 ```
 File name : 16.c
+
+WAP that will take n positive integers into an array A. Now find all the integers that have an odd index and replace them by 0 in array A. Finally show all elements of array A.
 ```c
 
 
@@ -876,6 +909,8 @@ int main(){
 
 ```
 File name : 17.c
+
+WAP that will take n integers into an array A. Now sort them in ascending order within that array. Finally show all elements of array A. (Bubble Sort)
 ```c
 #include<stdio.h>
 int main(){
@@ -905,6 +940,8 @@ int main(){
 
 ```
 File name : 18.c
+
+WAP that will take n integers into an array A. Now remove all duplicates numbers from that array. Finally print all elements from that array. 
 ```c
 #include<stdio.h>
 int main(){
@@ -936,6 +973,8 @@ int main(){
 
 ```
 File name : 19.c
+
+WAP that will take n integers into array A and m positive integers into array B. Now find the intersection (set operation) of array A and B.
 ```c
 #include<stdio.h>
 int main(){
@@ -975,6 +1014,8 @@ int main(){
 
 ```
 File name : 20.c
+
+WAP that will take n integers into an array A and m positive integers into array B. Now find the union (set operation) of array A and B.
 ```c
 #include<stdio.h>
 int main(){

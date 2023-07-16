@@ -2068,7 +2068,7 @@ Max: 9
 Location: [2][1]
 ```
 
-```
+```c
 #include<stdio.h>
 #include<math.h>
 

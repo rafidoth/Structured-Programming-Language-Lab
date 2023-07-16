@@ -8,6 +8,7 @@ Table of Contents
 - [Loop Related Problems](#loop)
 - [Array Related Problems](#array)
 - [Pattern Problems](#pattern)
+- [Matrix Problems](#matrix)
 
 
 
@@ -1691,7 +1692,189 @@ int main(){
     }
 
 }
+```
 
+
+# Matrix
+1. WAP that will take 9 integers into a 3 by 3 array (2D) and show them as traditional matrix view.
+```c
+#include<stdio.h>
+
+int main(){
+    int arr[3][3];
+    for(int i =0;i<3;i++){
+        for(int j =0;j<3;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+
+    for(int i =0;i<3;i++){
+        for(int j =0;j<3;j++){
+            printf("%d ",arr[i][j]);
+        }
+        printf("\n");
+    }
+
+}
+```
+
+2. WAP that will take (m x n) integers into a m by n array (2D) and print them both row-wise and column-wise.
+
+```
+2 3
+1 2 3
+6 5 4
+-------------------------------
+Row-wise: 1 2 3 6 5 4
+Column-wise: 1 6 2 5 3 4
+
+```
+
+```c
+#include<stdio.h>
+
+int main(){
+    int m,n;
+    scanf("%d %d",&m,&n);
+    int arr[m][n];
+    for(int i =0;i<m;i++){
+        for(int j =0;j<n;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    printf("Row-wise: ");
+    for(int i =0;i<m;i++){
+        for(int j =0;j<n;j++){
+            printf("%d ",arr[i][j]);
+        }
+    }
+
+    printf("\nCol-wise: ");
+    for(int j =0;j<n;j++){
+        for(int i =0;i<m;i++){
+            printf("%d ",arr[i][j]);
+        }
+    }
+
+}
+```
+
+3. WAP that will take input n by n matrix and print transpose the matrix
+```
+3
+1 2 3 
+4 5 6 
+7 8 9
+--------------------------
+1 4 7
+2 5 8
+3 6 9
+```
+```c
+#include<stdio.h>
+
+int main(){
+    int n;
+    scanf("%d",&n);
+    int arr[n][n];
+    for(int i =0;i<n;i++){
+        for(int j =0;j<n;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    //row=i, col=j
+    for(int j=0;j<n;j++){
+        for(int i=0;i<n;i++){
+            printf("%d ",arr[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+```
+
+4. WAP that will take inputs of a n by n matrix into a 2D array. Now find the determinant of this matrix. (Gauss Elimination) **
+```
+1 2 3
+4 5 6
+7 8 9
+-----------------------
+0
+```
+```c
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int n;
+    scanf("%d",&n);
+
+    float arr[n][n];
+
+    for(int i =0;i<n;i++){
+        for(int j =0;j<n;j++){
+            scanf("%f",&arr[i][j]);
+        }
+    }
+
+    //row=i, col=j
+    for(int i=0;i<n;i++){
+        for(int j =0;j<n;j++){
+            if(i>j){
+                float c = arr[i][j]/arr[j][j];
+                for(int k=0;k<n;k++){
+                    arr[i][k]= arr[i][k]-c*arr[j][k];
+                }
+            }
+        }
+    }
+
+//    for(int i =0;i<n;i++){
+//        for(int j =0;j<n;j++){
+//            printf("%f ",arr[i][j]);
+//        }
+//        printf("\n");
+//    }
+
+    float det = 1;
+    for(int i=0;i<n;i++){
+        det*=arr[i][i];
+    }
+
+    printf("%d",(int)ceil(det));
+}
+
+```
+
+
+5. WAP that will take inputs of a 3 by 3 matrix into a 2D array. Now find the determinant of this matrix.
+
+```
+1 2 3
+4 5 6
+7 8 9
+-----------------------
+0
+```
+
+```c
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int n =3;
+
+    int a[n][n];
+
+    for(int i =0;i<n;i++){
+        for(int j =0;j<n;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+
+    int det = a[0][0]*(a[1][1]*a[2][2]-a[1][2]*a[2][1])-a[0][1]*(a[1][0]*a[2][2]-a[1][2]*a[2][0])+a[0][2]*(a[1][0]*a[2][1]-a[1][1]*a[2][0]);
+    printf("%d",det);
+}
 
 
 
@@ -1700,3 +1883,434 @@ int main(){
 
 ```
 
+
+6. WAP that will take inputs of a n sized square matrix into a 2D array. Now show all the elements of its two diagonals.
+```
+5
+1 2 3 4 5
+5 4 3 2 1
+2 2 2 2 2
+6 7 8 9 0
+1 9 3 7 4
+-------------------------------
+Major diagonal: 1 4 2 9 4
+Minor diagonal: 5 2 2 7 1
+```
+
+```c
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int n;
+    scanf("%d",&n);
+
+    int arr[n][n];
+
+    for(int i =0;i<n;i++){
+        for(int j =0;j<n;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    printf("Major diagonal: ");
+    for(int i =0;i<n;i++){
+        printf("%d ",arr[i][i]);
+    }
+    printf("\nMinor Diagonal: ");
+    int j =n-1;
+    for(int i=0;i<n;i++){
+        printf("%d ",arr[i][j]);
+        j--;
+    }
+
+}
+```
+
+7. WAP that will take the size of an identity matrix from the user and generate the identity matrix into a 2D array. 
+
+```
+5
+-------------------
+1 0 0 0 0
+0 1 0 0 0
+0 0 1 0 0
+0 0 0 1 0
+0 0 0 0 1
+
+```
+
+```
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int n;
+    scanf("%d",&n);
+
+    int arr[n][n];
+
+    for(int i =0;i<n;i++){
+        for(int j =0;j<n;j++){
+            if(i==j) arr[i][j] = 1;
+            else arr[i][j] = 0;
+            printf("%d ",arr[i][j]);
+        }
+        printf("\n");
+    }
+
+}
+```
+
+8. WAP that will take inputs of two m x n sized matrix into two 2D array, suppose A and B. Now do C = A + B. Finally display all the elements from matrix / 2D array C.
+
+```
+2 3
+1 2 3
+2 3 4
+1 1 1
+2 2 2
+-----------------
+2 3 4
+4 5 6
+```
+
+```c
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int m,n;
+    scanf("%d %d",&m,&n);
+
+    int A[m][n],B[m][n],C[m][n];
+
+    for(int i =0;i<m;i++){
+        for(int j =0;j<n;j++){
+            scanf("%d",&A[i][j]);
+        }
+    }
+
+    for(int i =0;i<m;i++){
+        for(int j =0;j<n;j++){
+            scanf("%d",&B[i][j]);
+        }
+    }
+
+    for(int i =0;i<m;i++){
+        for(int j =0;j<n;j++){
+            C[i][j] = A[i][j] + B[i][j];
+            printf("%d ",C[i][j]);
+        }
+        printf("\n");
+    }
+
+}
+```
+
+9. WAP that will take inputs of two 3 x 3 sized matrix into two 2D array, suppose A and B. Now do C = A * B (multiplication). Finally display all the elements from matrix / 2D array C.
+```
+1 2 3
+4 5 6
+7 8 9
+2 2 2
+2 2 2
+1 1 1
+-------------------
+9 9 9
+24 24 24
+39 39 39
+```
+
+```c
+
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int n=3;
+
+    int A[n][n],B[n][n],C[n][n];
+
+    for(int i =0;i<n;i++){
+        for(int j =0;j<n;j++){
+            scanf("%d",&A[i][j]);
+        }
+    }
+
+    for(int i =0;i<n;i++){
+        for(int j =0;j<n;j++){
+            scanf("%d",&B[i][j]);
+        }
+    }
+
+    for(int i =0;i<n;i++){
+        for(int j =0;j<n;j++){
+            C[i][j] = 0;
+            for(int k=0;k<n;k++){
+                C[i][j] += A[i][k]*B[k][j];
+            }
+            printf("%d ",C[i][j]);
+        }
+        printf("\n");
+    }
+
+}
+```
+
+10. WAP that will take inputs of m x n sized matrix into a 2D array and find the maximum element with index locationfrom that matrix. 
+```
+3 3
+1 2 3
+4 5 6
+2 9 2
+-----------
+Max: 9
+Location: [2][1]
+```
+
+```
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int m,n;
+    scanf("%d %d",&m,&n);
+
+    int A[m][n];
+    int max = A[0][0];
+    int loc_i = 0;
+    int loc_j = 0;
+    for(int i =0;i<m;i++){
+        for(int j =0;j<n;j++){
+            scanf("%d",&A[i][j]);
+            if(A[i][j]>max){
+                max = A[i][j];
+                loc_i = i;
+                loc_j = j;
+            }
+
+        }
+    }
+
+    printf("Max: %d",max);
+    printf("\nLocation: [%d][%d]",loc_i,loc_j);
+
+}
+```
+
+
+11. WAP that will take (n x n) integer inputs into a square matrix of dimension n (where n must be an odd number). Then calculate sum of the integers at first row, last row and two diagonals without overlap.
+```
+5
+1 2 3 4 5
+2 3 4 1 6
+3 4 9 6 7
+4 2 6 7 8
+5 4 3 2 1
+------------------
+52
+```
+```c
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int n;
+    scanf("%d",&n);
+
+    int arr[n][n];
+    if(n%2==0){
+        printf("%d is not an odd number");
+        reutrn 0;
+    }
+
+    for(int i =0;i<n;i++){
+        for(int j =0;j<n;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    int sum =0;
+    int k = n-1;
+    for(int i =0;i<n;i++){
+        for(int j =0;j<n;j++){
+            if(i==0|| i==n-1)
+                sum+=arr[i][j];
+            else if(i==j)
+                sum+= arr[i][j];
+            else if(j==k)
+                sum+= arr[i][k];
+
+        }
+        k--;
+    }
+    printf("%d",sum);
+
+}
+```
+
+12. WAP that will take (n x n) integer inputs into a square matrix of dimension n (where n must be an odd number). Then calculate sum of the integers based on following position pattern (consider only the boxed position during the sum). Please see the input-output.
+
+```
+2 6
+1 2 3 4 5 6
+9 8 7 6 5 4
+---------------
+6 5 4 3 2 1
+4 5 6 7 8 9
+```
+
+```c
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int m,n;
+    scanf("%d %d",&m,&n);
+
+    int A[m][n];
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            scanf("%d",&A[i][j]);
+        }
+    }
+
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n/2;j++){
+            int temp = A[i][j];
+            A[i][j] = A[i][n-j-1];
+            A[i][n-j-1] = temp;
+        }
+    }
+
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            printf("%d ",A[i][j]);
+        }
+        printf("\n");
+    }
+}
+```
+
+13. WAP that will take (n x n) integer inputs into a square matrix of dimension n. Now determine whether the matrix is symmetric or not.
+
+```
+3
+1  7  3
+7  4  5
+3  5  6
+--------------
+YES
+```
+
+```c
+#include<stdio.h>
+
+int main(){
+    int n;
+    scanf("%d",&n);
+    int arr[n][n], T[n][n];
+    for(int i =0;i<n;i++){
+        for(int j =0;j<n;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+
+    for(int i=0;i<n;i++){
+        for(int j =0;j<n;j++){
+            T[i][j] = arr[j][i];
+        }
+    }
+    int flag = 1;
+    for(int i=0;i<n;i++){
+        for(int j =0;j<n;j++){
+            if(T[i][j] != arr[i][j]){
+                flag= 0;
+            }
+        }
+    }
+
+    (flag)? printf("YES"): printf("NO");
+}
+```
+
+14. WAP that will take (m x n) positive integer inputs into a matrix of dimension m x n. Now replace all the duplicate integers by -1 in that matrix. Finally display it.
+
+
+```
+3  3
+1  7  3
+7  4  5
+3  5  6
+------------
+1  7  3
+-1  4  5
+-1 -1  6
+```
+```c
+#include<stdio.h>
+#define MAX 1000
+int freq[MAX];
+
+int main(){
+    int m,n;
+    scanf("%d %d",&m,&n);
+    int arr[m][n];
+    for(int i =0;i<m;i++){
+        for(int j =0;j<n;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+
+
+    for(int i=0;i<m;i++){
+        for(int j =0;j<n;j++){
+            if(freq[arr[i][j]]==0){
+                freq[arr[i][j]]++;
+            }else{
+                arr[i][j] = -1;
+            }
+        }
+    }
+
+    for(int i =0;i<m;i++){
+        for(int j =0;j<n;j++){
+            printf("%d ",arr[i][j]);
+        }
+        printf("\n");
+    }
+}
+```
+15. WAP that will take (m x n) integer inputs into a matrix of dimension m x n. Now just simply add all the integers in that matrix and show the result.
+
+```
+3  3
+1  7  3
+7  4  5
+3  5  6
+---------------
+41
+```
+
+```c
+#include<stdio.h>
+
+int main(){
+    int m,n;
+    scanf("%d %d",&m,&n);
+    int arr[m][n];
+    for(int i =0;i<m;i++){
+        for(int j =0;j<n;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+
+
+    int sum =0;
+    for(int i =0;i<m;i++){
+        for(int j =0;j<n;j++){
+            sum+= arr[i][j];
+        }
+    }
+    printf("%d",sum);
+}
+```

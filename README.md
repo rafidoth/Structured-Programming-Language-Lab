@@ -1694,6 +1694,40 @@ int main(){
 }
 ```
 
+### Additional Pattern Questions
+19.
+```
+                  2
+               4  6  4
+           6  8  10  8  6
+      8  10  12  14  12  10  8
+ 10  12  14  16  18  16  14  12  10
+
+```
+```c
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int k=0;
+    for(int i=1;i<=n;i++){
+        int term = 2*i;
+        for(int j=1;j<=2*n-1;j++){
+            if(j<=n-i|| j>n+k){
+                printf("   ");
+            }else{
+                printf(" %d ",term);
+                if(j<n) term+=2;
+                else term -=2;
+            }
+        }
+        printf("\n");
+        k++;
+    }
+}
+```
+
 
 # Matrix
 1. WAP that will take 9 integers into a 3 by 3 array (2D) and show them as traditional matrix view.

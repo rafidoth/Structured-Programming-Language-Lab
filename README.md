@@ -14,6 +14,48 @@ Table of Contents
 
 
 # <a name="theory">Some Theoretical Knowledge that helps</a>
+### List of some Series
+
+Convergent (has a finite value) and Divergent Series (infinite value - formula can be derived for these)
+
+* Sum of the alternating reciprocals of the positive integers
+$$
+    \frac{1}{1} - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5} - \frac{1}{6} + ............ = ln(2)
+$$
+
+* Sum of the reciprocals of the triangular integers
+$$
+    \frac{1}{1} + \frac{1}{3} + \frac{1}{6} + \frac{1}{10} + \frac{1}{15} + \frac{1}{21} + ............ = 2
+$$
+
+* Sum of the  reciprocals of the factorial integers
+$$
+    \frac{1}{1} + \frac{1}{1} + \frac{1}{2} + \frac{1}{6} + \frac{1}{24} + \frac{1}{120} + ............ = e
+$$
+
+* Leibniz formula for π
+$$
+    \frac{1}{1} - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \frac{1}{9} - \frac{1}{11} + ............ = \pi/4
+$$
+
+* Sum of the  reciprocals of the power of 2
+$$
+    \frac{1}{1} + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \frac{1}{32} + ............ = 2
+$$
+
+* Sum of the alternating reciprocals of the power of 2
+$$
+    \frac{1}{1} - \frac{1}{2} + \frac{1}{4} - \frac{1}{8} + \frac{1}{16} - \frac{1}{32} + ............ = \frac{2}{3}
+$$
+
+<srong>Formula</strong> 
+
+* $n^{th}$ term = $a+(n-1)*d$
+
+* sum till $n^{th}$ term = $(n/2)*(2*a+(n-1)*d)$
+
+
+
 ---
 
 # Loop

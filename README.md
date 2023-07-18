@@ -19,14 +19,15 @@ Table of Contents
 Convergent (has a finite value) and Divergent Series (infinite value - formula can be derived for these)
 
 * Sum of the alternating reciprocals of the positive integers
-$$
-    \frac{1}{1} - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5} - \frac{1}{6} + ............ = ln(2)
-$$
+```math
+     \frac{1}{1} - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5} - \frac{1}{6} + ............ = ln(2)
+```
+
 
 * Sum of the reciprocals of the triangular integers
-$$
+```math
     \frac{1}{1} + \frac{1}{3} + \frac{1}{6} + \frac{1}{10} + \frac{1}{15} + \frac{1}{21} + ............ = 2
-$$
+```
 
 * Sum of the  reciprocals of the factorial integers
 $$

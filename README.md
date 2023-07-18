@@ -53,7 +53,7 @@ Convergent (has a finite value) and Divergent Series (infinite value - formula c
 
 * $n^{th}$ term = $a+(n-1)*d$
 
-* sum till $ n^{th} $ term = $ (n/2)*(2*a+(n-1)*d) $
+* sum till $n^{th}$ term = $(n/2)*(2*a+(n-1)*d)$
 
 
 

@@ -5,6 +5,7 @@ Solution of problemset provided in SPL Lab (CSE 1112)
 _**Disclaimer:** All the solutions provided in this repo are given by me. They are not guaranteed to be 100% correct or highly efficient. Please use them as a starting point and do your own testing and debugging. You can also take help from other sources to make your code more efficient._
 
 Table of Contents
+- [Some Theoretical Knowledge that helps](#theory)
 - [Loop Related Problems](#loop)
 - [Array Related Problems](#array)
 - [Pattern Problems](#pattern)
@@ -12,6 +13,7 @@ Table of Contents
 
 
 
+# <a name="theory">Some Theoretical Knowledge that helps</a>
 ---
 
 # Loop
